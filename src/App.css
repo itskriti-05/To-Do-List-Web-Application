@@ -1,0 +1,106 @@
+/* src/App.css */
+.App {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  color: #4a4a4a;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.add-task-form {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.task-input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.add-task-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-task-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.tasks-container {
+  text-align: left;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-item:hover {
+  background-color: #f9f9f9;
+}
+
+.task-name {
+  flex-grow: 1;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.task-name.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.no-tasks-message {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  margin-top: 20px;
+}
